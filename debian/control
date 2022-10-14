@@ -1,0 +1,21 @@
+Source: node-replace-ext
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-replace-ext
+Vcs-Git: https://salsa.debian.org/js-team/node-replace-ext.git
+Homepage: https://github.com/gulpjs/replace-ext
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-replace-ext
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Provides: ${nodejs:Provides}
+Description: Node module to replace file extension with another one
+ replace-ext replaces extension of a given file.

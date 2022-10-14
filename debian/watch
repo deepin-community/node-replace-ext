@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-replace-ext-$1.tar.gz/ \
+ https://github.com/gulpjs/replace-ext/tags .*/archive/v?([\d\.]+).tar.gz
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-replace-ext,pgpmode=none" \
+ https://registry.npmjs.org/@types/replace-ext https://registry.npmjs.org/@types/replace-ext/-/replace-ext-([\d\.]+)@ARCHIVE_EXT@ ignore

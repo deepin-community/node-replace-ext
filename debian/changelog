@@ -1,0 +1,35 @@
+node-replace-ext (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Apply multi-arch hints.
+    + node-replace-ext: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto install
+  * Fix copyright
+  * Embed @types/replace-ext
+  * New upstream version 2.0.0
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 29 Oct 2020 21:45:21 +0100
+
+node-replace-ext (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #845224)
+
+ -- Sruthi Chandran <srud@disroot.org>  Mon, 21 Nov 2016 22:14:50 +0530
